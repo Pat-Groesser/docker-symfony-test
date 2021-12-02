@@ -12,6 +12,10 @@ There are two different versions of Easy symfony one with sqlite and an other wi
 
 ---
 
+###Prerequisites
+
+Before starting the project installation you need to ensure you have a version of [docker engine and docker-compose](https://docs.docker.com/compose/install/) installed on your computer.
+
 ### Installation
 
 The recommended way to use Easy Symfony is to first fork this repository. To do so please refer to the [github article](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) that gets
@@ -39,7 +43,7 @@ Now we will use composer to create our symfony project.
 
 _This is an example you can use any [symfony](https://symfony.com/doc/current/setup.html#creating-symfony-applications) project creation command._
 
-You a ready to go ! 
+You are ready to go ! You can check that your app is running on your web browser at `localhost:8080`.
 
 ### Configuration
 
