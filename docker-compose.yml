@@ -11,19 +11,20 @@ services:
             - ./app:/var/www/project
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
         depends_on:
-            - php8-service
+            - php80-service
             - encore-service
     #php
-    php8-service:
+    php80-service:
         build:
             context: .
             dockerfile: ./php/Dockerfile
-        container_name: php8-container
+        container_name: php80-container
         ports:
             - "9000:9000"
         volumes:
             - ./app:/var/www/project
-    
+            - ./app/documentation:/var/www/project/
+
     #node
     encore-service:
         image: node:latest
